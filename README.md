@@ -1,7 +1,7 @@
 # Express-API
 
 For each task:   
-GET data from http:// localhost:3000 / endpointname  \n
+GET data from http:// localhost:3000 / endpointname  
 In Body, raw, provide example array. 
 
 Task 1
