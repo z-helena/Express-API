@@ -62,7 +62,7 @@ app.get('/target', (req: Request, res: Response) => {
     const targetSum = (array: number[], target: number): boolean => {
         const passed: number[] = [];
         for (let n of array) {
-            if (passed.includes(target - n)) {
+            if (passed.includes(target - n)) { //check if current number and a passed number sum to target
                 return true;
             }
             passed.push(n);
