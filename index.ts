@@ -68,8 +68,8 @@ app.get('/target', (req: Request, res: Response) => {
         return false;
     }
 
-    const result: boolean = targetSum(array, target);
-    res.json({ result });
+    const targetMet: boolean = targetSum(array, target);
+    res.json({ targetMet });
 });
 
 app.listen(port, () => {
