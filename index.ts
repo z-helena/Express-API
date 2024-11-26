@@ -1,3 +1,5 @@
+// Helena Zhang
+
 import { Request, Response } from 'express';
 import express = require('express');
 const app = express();
@@ -13,7 +15,6 @@ app.get('/add', (req: Request, res: Response) => {
 });
 
 // Task 2
-
 app.get('/product', (req: Request, res: Response) => {
     const { array } = req.body
     const product = array.reduce((acc: number, num: number) => acc * num, 1);
@@ -21,7 +22,6 @@ app.get('/product', (req: Request, res: Response) => {
 });
 
 // Task 3
-
 app.get('/evens', (req: Request, res: Response) => {
     const { array } = req.body
     const evens = array.filter((num: number) => num % 2 == 0);
@@ -29,7 +29,6 @@ app.get('/evens', (req: Request, res: Response) => {
 });
 
 // Task 4
-
 app.get('/min', (req: Request, res: Response) => {
     const { array } = req.body
     const min = Math.min(...array);
@@ -43,7 +42,6 @@ app.get('/max', (req: Request, res: Response) => {
 });
 
 // Task 5
-
 app.get('/sort', (req: Request, res: Response) => {
     const { array, ascending } = req.body
     const sortedArray = array.slice().sort((a: number, b: number) => {
